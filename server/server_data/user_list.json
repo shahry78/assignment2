@@ -1,0 +1,32 @@
+[
+    {
+        "name":"Admin",
+        "email":"admin",
+        "pass":"admin",
+        "admin":"super"
+    },
+    {
+        "name":"The Coolest Kid",
+        "email":"abc",
+        "pass":"123",
+        "admin":"no"
+    },
+    {
+        "name":"Mangu pangu",
+        "email":"bcd",
+        "pass":"234",
+        "admin":"group"
+    },
+    {
+        "name":"Hero of the Chat Forum",
+        "email":"cde",
+        "pass":"345",
+        "admin":"super"
+    },
+    {
+        "name":"Eek",
+        "email":"def",
+        "pass":"456",
+        "admin":"no"
+    }
+]

@@ -1,0 +1,33 @@
+<div class="grid-container">
+    
+    <div class="grid-element sidebar">
+        <div class="grid-element channel-management">
+            <div *ngFor="let group of groupList">
+                {{group.gname}}
+                <div *ngFor="let channel of channelList">
+                    <button (click)="messageList(channel.id)" *ngIf="channel.group==group.gname" class="btn btn-primary">{{channel.cname}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="grid-element main">
+        <div *ngFor="let msg of msgList">
+            <div *ngIf="msg.user==name" style="text-align:right; color:lime">You</div>
+            <div *ngIf="msg.user==name" style="text-align:right" >{{msg.body}}</div>
+
+            <div *ngIf="msg.user!=name" style="text-align:left; color:yellow">{{msg.user}}</div>
+            <div *ngIf="msg.user!=name" style="text-align:left" >{{msg.body}}</div>
+        </div>
+    </div>
+
+    <div class="grid-element chat">
+        <form class="input-field">
+            <!--Take the input of the chat, post it to the channel
+                Something with observers and subscribing here very likely-->
+            <span><input placeholder="Type here to Chat" type="text" class="chatbox" [(ngModel)]="chatmessage" name="chatmessage" autocomplete="off"></span>
+            <button class="btn btn-primary chatbutton" (click)="chatSubmit()" type="submit">Post</button>
+            </form>
+    </div>
+
+</div>

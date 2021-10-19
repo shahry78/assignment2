@@ -1,0 +1,22 @@
+{
+    "0":{
+        "group":"Cats",
+        "cname":"Calcio"
+    },
+    "1":{
+        "group":"Cats",
+        "cname":"Furball"
+    },
+    "2":{
+        "group":"Flea",
+        "cname":"Circus"
+    },
+    "3":{
+        "group":"Snake",
+        "cname":"Eyes"
+    },
+    "4":{
+        "group":"Snake",
+        "cname":"Forked Tounge"
+    }
+}

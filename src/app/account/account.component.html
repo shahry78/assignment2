@@ -1,0 +1,20 @@
+<div class="grid-container">
+    <div class="grid-element profile-pic" style="text-align:center">
+        <img width="250" alt="Joey is so happy to see you mouse over him. His parents never loved him and put him up for adoption when he was three." src="https://cdn.mindful.org/2015/09/1200x1200.jpg">
+        <div>{{name}}'s Profile</div>
+        <div>Email: {{email}}</div>
+    </div>
+    <div class="grid-element channel-management">
+        <div *ngFor="let group of groupList">
+            {{group.gname}}
+            <div *ngFor="let channel of channelList">
+                <div style="font-size:24px; color:gray" *ngIf="channel.group==group.gname">{{channel.cname}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-element profile-data">
+        <div><a class="nav-link" routerLink="/chat">Go to Chat</a></div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

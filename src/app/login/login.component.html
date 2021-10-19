@@ -1,0 +1,31 @@
+<head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+
+<body id="LoginForm">
+    <div class="container">
+        <div class="login-form">
+            <div class="main-div">
+                <div class="panel">
+                    <h2>Login</h2>
+                    <p *ngIf="verify">Please enter your email and password</p>
+                    <p *ngIf="!verify" style="color:rgb(235, 152, 152)">Wrong email or password, please try again</p>
+                </div>
+                <form id="Login">  
+                    <div class="form-group">   
+                        <input type="email" [(ngModel)]="em" name="em" class="form-control" id="inputEmail" placeholder="Email Address">
+                    </div><!-- -->
+                    <div class="form-group">
+                        <input type="password" [(ngModel)]="pass" name="pass" class="form-control" id="inputPassword" placeholder="Password">
+                    </div><!---->
+                    <button (click)="loginClick()" type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+            <!--<p class="botto-text">Text Here</p>-->
+        </div>
+    </div>
+</body>
+
+<router-outlet></router-outlet>

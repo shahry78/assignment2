@@ -1,0 +1,60 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.20fr 0.80fr;
+  grid-template-rows: 0.15fr 0.85fr;
+  height: 90vh;
+  padding: 10px 10px 0;
+  box-sizing: border-box;
+}
+
+.grid-element {
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.sidebar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background: #1e1d22;
+  overflow-y: auto;
+  font-size: 1em;
+  background-image: url();
+  background-size: cover;
+}
+
+.main {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background: #1e1d22;
+  overflow-x: wrap;
+  overflow-y: auto;
+  font-size: 1em;
+  margin-left: 10px;
+
+  background-image: url();
+  background-size: cover;
+}
+
+.chat {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  background: #1e1d22;
+  overflow-y: auto;
+  font-size: 1em;
+  margin-left: 10px;
+  background-image: url();
+  background-size: contain;
+}
+.chatbox {
+  width: 80%; 
+}
+.chatbutton {
+  width: 10%;
+  float:right;
+}

@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+  },
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts",
+    "server/server_data/dbAuth.js"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "server/server_data/dbAuth.js"
+  ],
+  "exclude": [
+    "src/test.ts",
+    "src/**/*.spec.ts"
+  ]
+}

@@ -1,0 +1,21 @@
+<!--This file and it's corresponding css dictates the content and layout of the nav bar present through the website-->
+<div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand">Chitter</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li> <a class="nav-link" routerLink="/login">Login</a></li>
+      <li> <a class="nav-link" routerLink="/account">Account</a></li>
+      <li> <a class="nav-link" routerLink="/chat">Chat</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a (click)="logoutClick()" class="nav-link" routerLink="/login">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+<router-outlet></router-outlet>
